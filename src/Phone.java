@@ -5,18 +5,21 @@ public class Phone {
     private int number;
     private String model;
     private int weight;
-
-    Phone(int number, String model, int weight) {
+    static int count;
+    Phone(int number, String model, int weight)
+    {
         Phone test = new Phone(222222, "first");
+        count++;
     }
 
     Phone(int number, String model) {
         this.number = number;
         this.model = model;
+        count++;
     }
 
     Phone() {
-
+        count++;
     }
 
     public void receiveCall(String name) {
