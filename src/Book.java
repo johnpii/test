@@ -1,4 +1,5 @@
-public class Book implements Printable {
+public class Book implements Printable
+{
     public static void printBooks(Printable[] printable)
     {
         for (Printable p: printable) {
